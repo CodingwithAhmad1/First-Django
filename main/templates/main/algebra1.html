@@ -1,0 +1,198 @@
+{%extends 'main/base_calc.html'%}
+
+{%block style%}
+<style>     
+    *
+    {
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'Comic Sans ms', sans-serif;
+    }
+    
+    body
+    {
+        background:#fff
+        
+    }
+    
+    .inputBox
+    {
+        position: relative;
+        width:250px;
+    
+    }
+    
+    .inputBox input
+    {
+        width:100%;
+        padding:10px;
+        border:1px solid rgba(255, 255, 255, 0.25);
+        background:#0061ff;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        font-size: 1em;
+        transition: 0.5s;
+    
+    }
+    
+    .inputBox span
+    {
+        position: absolute;
+        left:0;
+        padding: 10px;
+        pointer-events: none;
+        font-size: 1em;
+        color:rgba(255, 255, 255, 0.25);
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+    
+    .inputBox input:valid ~ span,
+    .inputBox input:focus ~ span
+    {
+        color:#00dfc4;
+        transform: translateX(10px) translateY(-7px);
+        font-size: 0.65em;
+        padding:0 10px;
+        background: #0061ff;     
+        border-left: 1px solid #00dfc4;
+        border-right: 1px solid #00dfc4;
+        letter-spacing: 0.2em;
+    }
+    {% comment %} 1d2b3a {% endcomment %}
+    .inputBox:nth-child(2) input:valid ~ span,
+    .inputBox:nth-child(2):focus ~ span
+    {
+        background: #00dfc4;
+        color: ##00dfc4;
+        border-radius: 2px;
+    }
+    
+    .inputBox input:valid,
+    .inputBox input:focus
+    {
+        border:1px solid #00dfc4;
+    }
+
+    .btn
+{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: #01d8e3;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0 , 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.btn:hover, .btn:focus, .btn:active
+{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color:white;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#01d8e3; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+</style>
+{%endblock%}
+{%block content%}
+    <form action="{%url 'algebra_res1'%}">
+        <center>
+            <div style = "position:relative; left:60px; top:100px;">
+                <h1>Algebra calculator<h1>
+            </div>
+            <br>
+            <div style = "position:relative; left:60px; top:150px;">
+                <div class="inputBox">
+                    <input type="number" name="num1" autocomplete="off" required>
+                    <span>Value a</span>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="number" name="num2" autocomplete="off" required>
+                    <span>Value b</span>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="number" name="num3" autocomplete="off" required>
+                    <span>Value c</span>
+                </div>
+                <input type="submit" value="submit">
+            </div>
+        </form>
+        </center>
+
+        {%block ans_content%}
+
+        {%endblock%}
+</body>
+</html> 
+{%endblock%}
+
+
+
+
+
+{%block nav_items%}
+<li class="nav-item"><a href="{% url 'trignometry' %}" class="nav-link" >Trignometry</a></li>
+{%endblock%}
+
+{%block nav_style%}
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+{%endblock%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

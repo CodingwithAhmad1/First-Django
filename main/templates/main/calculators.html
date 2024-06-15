@@ -1,0 +1,61 @@
+{%extends 'main/base_calc.html'%}
+{%block title%}
+Calculators
+{%endblock%}
+
+{%block nav_style%}
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+{%endblock%}
+
+
+
+{%block content%}
+<br>
+<br>
+<main>
+    <h1 class="visually-hidden"> </h1>
+  
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom" style="color:#00e5ff;"> Calculators</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+          </div>
+          <h3 class="fs-2" style="color:#00e5ff;">Algebra </h3>
+          <p style="color:#00ffe6;">This will take you to a range of calculators that together, can solve any algebraic equation</p>
+          <a href="{%url 'algebra' %}" class="icon-link d-inline-flex align-items-center" >
+            Algebraic Calcs
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+          </div>
+          <h3 class="fs-2" style="color:#00e5ff;">Trignometry</h3>
+          <p style="color:#00ffe6;">This will take you to 2 different calculators that solve Soh Cah Toa problems, as well as Sine and Cosine rule problems.</p>
+          <a href="{%url 'trignometry' %}" class="icon-link d-inline-flex align-items-center">
+            Trignometry Calcs
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+          </div>
+          <h3 class="fs-2" style="color:#00e5ff;">Mechanics of motion </h3>
+          <p style="color:#00ffe6;">This takes you to A-level calculators that solve projectile motion questions from ground and height, as well as any SUVAT equation problem.</p>
+          <a href="{%url 'motion' %}" class="icon-link d-inline-flex align-items-center">
+           
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+</main>
+{%endblock%}

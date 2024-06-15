@@ -1,0 +1,53 @@
+{%extends 'main/base.html'%}
+{%block title%}
+Motion
+{%endblock%}
+{%block nav_items%}
+<li class="nav-item"><a href="{% url 'motion'%}" class="nav-link" >Mechanics of Motion</a></li>
+{%endblock%}
+
+{%block content%}
+<main>
+    <h1 class="visually-hidden">Mechanics of Motion calculators</h1>
+  
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom">Overview</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+          </div>
+          <h3 class="fs-2">Projectile Motion - ground </h3>
+          <p>This calculator gives you the values of all the variables in a Projectile Motion question.</p>
+          <a href="#" class="icon-link d-inline-flex align-items-center">
+            Calculator
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+          </div>
+          <h3 class="fs-2">SUVAT</h3>
+          <p>This calculator can solve all the values in a SUVAT question, once known values are inputted.</p>
+          <a href="#" class="icon-link d-inline-flex align-items-center">
+            Calculator
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+          </div>
+          <h3 class="fs-2">Coming soon! </h3>
+          <p>text</p>
+          <a href="#" class="icon-link d-inline-flex align-items-center">
+           
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+</main>
+{%endblock%}
+

@@ -1,0 +1,86 @@
+{%extends 'main/base_calc.html'%}
+{%block title%}
+Algebra
+{%endblock%}
+
+{%block nav_style%}
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+{%endblock%}
+
+
+{%block nav_items%}
+<li class="nav-item"><a href="{% url 'algebra' %}" class="nav-link" >Algebra</a></li>
+{%endblock%}
+
+{%block style%}
+<style>
+h2{
+  color:##00dfc4;
+}
+
+h3{
+  color:##00dfc4;
+}
+
+p{
+  color:#fff
+}
+
+</style>
+{%endblock%}
+
+
+
+
+
+
+{%block content%}
+<br>
+<br>
+<main>
+    <h1 class="visually-hidden"> </h1>
+  
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom" style="color:#00e5ff;"> Algebra</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg>
+          </div>
+          <h3 class="fs-2" style="color:#00e5ff;">Factorise and solve</h3>
+          <p style="color:#00ffe6;">This calculator factorises and solves any equation in the form ax**2 + bx + c = 0</p>
+          <a href="{%url 'algebra1' %}" class="icon-link d-inline-flex align-items-center">
+            Calculator
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"/></svg>
+          </div>
+          <h3 class="fs-2" style="color:#00e5ff;">Coming soon-algebra scientific calculator</h3>
+          <p style="color:#00ffe6;">Other text...</p>
+          <a href="#" class="icon-link d-inline-flex align-items-center">
+            Calculator
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+          </div>
+          <h3 class="fs-2" style="color:#00e5ff;">Coming soon! </h3>
+          <p style="color:#00ffe6;">text</p>
+          <a href="#" class="icon-link d-inline-flex align-items-center">
+           
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+</main>
+{%endblock%}
